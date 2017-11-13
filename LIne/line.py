@@ -165,7 +165,7 @@ try:
         elif signal(0, 0, 0, 0, 0) and distance > 20:
             stop()
 
-        elif distance < 20:
+        if distance < 20:
             stop()
             sleep(3)
             rightSwingTurn(list)
