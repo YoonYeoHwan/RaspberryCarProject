@@ -138,7 +138,7 @@ try:
         D = GPIO.input(rightlessled)
         E = GPIO.input(rightmostled)
 
-        distance = getDistance()
+        #distance = getDistance()
 
 
         if signal(1, 1, 0, 1, 1) and distance > 20:
@@ -165,12 +165,6 @@ try:
         elif signal(0, 0, 0, 0, 0) and distance > 20:
             stop()
 
-        if distance < 20:
-            stop()
-            sleep(3)
-            rightSwingTurn(list)
-            stop()
-            sleep(3)
 
 
 
